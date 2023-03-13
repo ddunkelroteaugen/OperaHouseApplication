@@ -1,0 +1,205 @@
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+body {
+    font-family: helvetica;
+    margin: auto;
+}
+
+hr {
+    margin: 20px;
+}
+
+.orange {
+    color: rgb(255, 128, 70)
+}
+
+.pink {
+    color: rgb(255, 43, 148)
+}
+
+.purple {
+    color: rgb(170, 12, 197);
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(7px);
+    transition: all 1.5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.logo {
+    width: 60%;
+    margin: 10% 20% 2%;
+}
+
+.head {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.intro {
+    background-color: rgb(255, 128, 70);
+    color: white;
+    padding: 40px;
+    border-radius: 3px;
+
+}
+
+.skills {
+    background-color: rgb(255, 128, 70, 0.3);
+    color: rgb(32, 32, 92);
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 128, 70);
+}
+
+.skills:nth-child(1) {
+    transition-delay: 200ms;
+}
+
+.skills:nth-child(2) {
+    transition-delay: 300ms;
+}
+
+.skills:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.skills:nth-child(4) {
+    transition-delay: 500ms;
+}
+
+.skills:nth-child(5) {
+    transition-delay: 600ms;
+}
+
+.skills:nth-child(6) {
+    transition-delay: 700ms;
+}
+
+.skills:nth-child(7) {
+    transition-delay: 800ms;
+}
+
+.skills:nth-child(8) {
+    transition-delay: 900ms;
+}
+.skills:nth-child(9) {
+    transition-delay: 1000ms;
+}
+
+
+.degree {
+    transition-delay: 1100ms;
+    padding: 5px 10px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgb(159, 179, 233, 0.8);
+    border: 1px solid rgb(32, 32, 92);
+    color: rgb(32, 32, 92);
+    border-radius: 5px;
+}
+
+.questions {
+    font-size: 1.3em;
+    font-weight: 550;
+    width: 60%;
+    padding: 40px;
+}
+
+
+.paragraph {
+    width: 60%;
+    padding: 30px 40px;
+    font-size: 1.2em;
+    margin: 20px 20%;
+}
+
+.one {
+    border-left: 5px solid rgb(32, 32, 92);
+}
+
+.two {
+    border-left: 5px solid rgb(66, 102, 217);
+}
+
+.three {
+    border-left: 5px solid rgb(152, 179, 237);
+}
+
+.four {
+    border-left: 5px solid rgb(252, 178, 16);
+    width: 40%;
+}
+
+.five {
+    border-left: 5px solid rgb(75, 25, 18);
+}
+
+.six {
+    border-left: 5px solid rgb(125, 102, 99);
+}
+
+.seven {
+    border-left: 5px solid rgb(227, 186, 151);
+}
+
+.eight {
+    border-left: 5px solid rgb(204, 227, 151);
+    width: 40%;
+}
+
+.hide {
+    display: none !important;
+}
+.arrow {
+   margin-right: 10%;
+   font-size: 1.3em;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.website {
+border: 2px solid rgb(184, 8, 15);
+background-color: rgb(123, 77, 106);
+transition-delay: 200ms;
+}
+
+.resume {
+    border: 2px solid rgb(112, 136, 177);
+    background-color: rgb(171, 53, 74);
+    transition-delay: 400ms;
+
+}
+
+.cover-letter {
+    border: 2px solid rgb(152, 107, 136);
+    background-color: rgb(184, 8, 15);
+    transition-delay: 600ms;
+
+}  
+ 
+a.white:link, a.white:visited, a.white:hover, a.white:active {
+ color: white;
+}
