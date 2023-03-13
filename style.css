@@ -19,6 +19,12 @@ body {
     margin-right: 5%;
 }
 
+.paragraph-right {
+    font-size: 1.1em;
+    float: right;
+    margin-left: 5%;
+}
+
 .highlight {
     width: 60%;
     font-size: 1.1em;
@@ -33,7 +39,7 @@ body {
 
 }
 
-.dual {
+/* .dual {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -51,7 +57,7 @@ body {
     text-align: center;
     font-size: 1.1em;
     margin: 20px;
-}
+} */
 
 
 .hidden {
