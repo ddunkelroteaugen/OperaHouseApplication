@@ -39,8 +39,25 @@ hr {
 }
 
 .logo {
-    width: 60%;
-    margin: 10% 20% 2%;
+    width: 40%;
+    margin-left: 30%;
+}
+
+.menu {
+    margin: 0px 0px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.menu-item {
+    margin: 0px 50px;
+    font-size: 1.3em;
+}
+
+.menu-item:hover{
+    text-decoration: underline;
 }
 
 .head {
@@ -55,12 +72,13 @@ hr {
 
 .title {
     font-size: 2em;
-    color: rgb(32, 32, 92)
+    /* color: rgb(32, 32, 92) */
 }
 
 .subtitle {
     font-size: 1.8em;
-    color: rgb(66, 102, 217)
+    color: grey;
+    /* color: rgb(66, 102, 217) */
 }
 
 .skills {
@@ -70,6 +88,7 @@ hr {
     margin-top: 10px;
     border-radius: 5px;
     border: 1px solid rgb(255, 128, 70);
+    font-size: 1.2em;
 }
 
 .skills:nth-child(1) {
@@ -118,6 +137,7 @@ hr {
     border: 1px solid rgb(32, 32, 92);
     color: rgb(32, 32, 92);
     border-radius: 5px;
+    font-size: 1.3em;
 }
 
 .questions {
@@ -173,15 +193,25 @@ hr {
     display: none !important;
 }
 
-.arrow {
+.readmore {
     margin-right: 10%;
-    width: 10%;
+    font-style: italic;
+}
+.arrow {
+    width: 100px;
+    transition: 0.3s
+}
+
+.arrow:hover {
+    width: 110px;
+    transition: 0.3s;
 }
 
 button {
     font-size: 1.2em;
     padding: 15px;
     border-radius: 20px;
+    margin: 20px;
 }
 
 .website {
@@ -209,6 +239,12 @@ a.white:visited,
 a.white:hover,
 a.white:active {
     color: white;
+}
+
+.footer {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.4em;
 }
 
 @media (max-width: 1200px) {

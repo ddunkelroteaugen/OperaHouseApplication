@@ -9,66 +9,80 @@
 <script defer src="app.js"></script>
 
 <body>
-    <img class="hidden logo" src="./142e68c4-133c-4b22-bded-2750f08afcb1_rwc_15x0x947x180x4096.png" />
+    <img class="logo" src="./media/142e68c4-133c-4b22-bded-2750f08afcb1_rwc_15x0x947x180x4096.png" />
+    <img src="./media/Artwork_Two.jpg" style="width: 40%; margin-left: 30%;"/>
+    <div class="menu">
+        <div class="menu-item" onClick="nav('profile')">Profile</div>
+        <div class="menu-item" onClick="nav('question-one')">Question 1</div>
+        <div class="menu-item" onClick="nav('question-two')">Question 2</div>
+        <div class="menu-item" onClick="nav('supporting-documents')">Supporting Documents</div>
+    </div>
+    <div id="profile">
+        <div style="margin: 10%;">
+            <div style="display: flex; justify-content: space-around; align-items: top;">
 
-
-    <div style="display: flex; justify-content: space-around; align-items: top; margin-top: 100px;">
-        <img class="hidden" src="IMG_0048.jpg" style="width: 30%; transition-delay: 200ms">
-        <div class="hidden"
-            style="writing-mode: vertical-rl; color: rgb(255, 128, 70); transition-delay: 600ms; font-size: 1.5em;">
-            Who
-            am
-            I ?</div>
-        <div style="width: 50%;">
-            <div class="hidden">
-                <div class="title">I
+                <img class="hidden" src="./media/IMG_0048.jpg" style="width: 30%; transition-delay: 200ms">
+                <div class="hidden" style="writing-mode: vertical-rl; color:rgb(255, 128, 70); transition-delay: 600ms; font-size: 1.5em;">
+                    Who
                     am
-                    Selma,</div>
-                <div class="subtitle">a French and Australian artist
-                    and Front End Developer based in Sydney since 2015.<br />I am thrilled to be applying for the
-                    position
-                    of
-                    Junior
-                    Front-End Developer at the
-                    Opera House in Sydney, position number SOH2119.</div>
-            </div>
-            <br/>
-            <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-                <div class="skills hidden">HTML</div>
-                <div class="skills hidden">CSS</div>
-                <div class="skills hidden">JavaScript</div>
-                <div class="skills hidden">React JS</div>
-                <div class="skills hidden">Bootstrap</div>
-                <div class="skills hidden">Java</div>
-                <div class="skills hidden">SQL</div>
-                <div class="skills hidden">Adobe Suite</div>
-                <div class="skills hidden">Git/GitHub</div>
-            </div>
-            <div class="degree hidden">Bachelor of Commerce and Fine Arts from UNSW majoring in Information Systems
+                    I ?</div>
+                <div style="width: 50%;">
+                    <div class="hidden">
+                        <div class="title">My name is
+                            Selma,</div>
+                        <div class="subtitle">an Australian and French artist
+                            and Front End Developer based in Sydney since 2015.<br />I am thrilled apply for the
+                            position
+                            of
+                            Junior
+                            Front-End Developer at the
+                           Sydney Opera House, position number SOH2119.</div>
+                    </div>
+                    <br />
+                    <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+                        <div class="skills hidden">HTML</div>
+                        <div class="skills hidden">CSS</div>
+                        <div class="skills hidden">JavaScript</div>
+                        <div class="skills hidden">React JS</div>
+                        <div class="skills hidden">Bootstrap</div>
+                        <div class="skills hidden">Java</div>
+                        <div class="skills hidden">SQL</div>
+                        <div class="skills hidden">Adobe Suite</div>
+                        <div class="skills hidden">Git/GitHub</div>
+                    </div>
+                    <div class="degree hidden">Bachelor of Commerce and Fine Arts from UNSW majoring in Information
+                        Systems
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <div style="margin-top: 100px;">
+    <div id="question-one" class="hide">
         <div style="display: flex; align-items: center; justify-content: space-between; background-color: whitesmoke;">
-            <div class="questions">The Sydney Opera House is one of the world's busiest performing arts venues and aims
+            <div class="questions">The Sydney Opera House is one of the world's busiest performing arts venues and
+                aims
                 for
                 excellence in online
                 customer engagement. Please outline how you think your skills and experience will assist you in
                 contributing
                 to
                 Sydney Opera House web development.</div>
-            <img id="icon" src="Untitled_Artwork_smokewhite.jpg" style="width: 10%; margin-right: 100px;">
+            <img id="icon" src="./media/Untitled_Artwork_smokewhite.jpg" style="width: 10%; margin-right: 100px;">
         </div>
         <div style="display: flex; align-items: center; justify-content: space-around;">
-            <div id="p-one" class="paragraph one">I believe that I am an ideal candidate to contribute to Sydney Opera
+            <div id="p-one" class="paragraph one">I believe that I am an ideal candidate to contribute to Sydney
+                Opera
                 House
                 web
                 development because of my skill level and experience in Front-end Technologies,
                 my
                 passion for visual and performing arts and my experience working in teams and adding my personality
                 into a positive work environment.</div>
-            <img id="arrow-one" class="arrow" src="arrow.jpg" onClick="arrow('arrow-one','p-two')"/>
+            <div class="readmore">
+                <img id="arrow-one" class="arrow" src="./media/arrow.jpg"
+                    onClick="arrow('arrow-one', 'read-one','p-two')" />
+                <div id="read-one" style="text-align: center;">read more...</div>
+            </div>
         </div>
         <div id="p-two" class="hide"
             style="display: flex; align-items: center; justify-content: space-around; background-color: whitesmoke;">
@@ -76,11 +90,16 @@
                 critically
                 consider the customer journey through the platform and its ease of use, as well as my eye for
                 colours,
-                balance, and attention to detail to celebrate and highlight upcoming events or articles through clear
+                balance, and attention to detail to celebrate and highlight upcoming events or articles through
+                clear
                 and
                 exciting
                 layouts.</div>
-            <img id="arrow-two" class="arrow" src="arrow_whitesmoke.jpg"  onClick="arrow('arrow-two','p-three')"/>
+            <div class="readmore">
+                <img id="arrow-two" class="arrow" src="./media/arrow_whitesmoke.jpg"
+                    onClick="arrow('arrow-two', 'read-two','p-three')" />
+                <div id="read-two" style="text-align: center;">read more...</div>
+            </div>
         </div>
         <div id="p-three" class="hide" style="display: flex; align-items: center; justify-content: space-around;">
             <div class="paragraph three">I have consistently worked to support Sydney-based art and our local
@@ -89,7 +108,8 @@
                 Powerhouse in 2019, the UNSW Art and Design Open Day in
                 2019,
                 and
-                the <a href="https://wierdwomen.squarespace.com/about" target="_blank">Wierd Women</a> retreat in 2021,
+                the <a href="https://wierdwomen.squarespace.com/about" target="_blank">Wierd Women</a> retreat in
+                2021,
                 amongst others. I took this passion to gear up as a co-organiser of
                 both
                 the Inner Scribes Exhibition, and the <a href="https://www.instagram.com/rootsfestival_"
@@ -100,7 +120,11 @@
                 large groups of creative people while also coordinating operations, deadlines and human resources
                 before,
                 during, and post events. </div>
-            <img id="arrow-three" class="arrow" src="arrow.jpg" onClick="arrow('arrow-three','p-four')"/>
+            <div class="readmore">
+                <img id="arrow-three" class="arrow" src="./media/arrow.jpg"
+                    onClick="arrow('arrow-three', 'read-three','p-four')" />
+                <div id="read-three" style="text-align: center;">read more...</div>
+            </div>
         </div>
         <div id="p-four" class="hide" style="background-color: whitesmoke; padding: 5px;">
             <div class="paragraph four">I thrive on opportunity, and bring charisma, personability, creativity,
@@ -115,71 +139,99 @@
                 concrete technological skills to achieve excellence in online customer engagement.
             </div>
         </div>
+
     </div>
-    <br/><br/><br/>
-    <hr>
-    <div style="display: flex; align-items: center; justify-content: space-between;">
-        <img id="icon" src="Untitled_Artwork.jpg" style="width: 10%; margin-left: 100px;">
-        <div class="questions" style="text-align: left;">As a Front-end Developer you will have created or
-            contributed
-            to an array of exciting projects. Tell us about the one your are most prouf of and why?</div>
-    </div>
-    <br/>
-    <div style="display: flex; align-items: center; justify-content: space-around; background-color: whitesmoke;">
-        <div id="p-five" class="paragraph five">
-            The project I am most proud of is working with Tennis Australia to reimagine and redesign the delivery
-            of Tennis Victoria’s youth program, “Future Leaders”. <a
-                href="https://www.tennis.com.au/vic/players/programs/future-leaders" target="_blank">Future Leaders</a>
-            facilitates youth to
-            volunteer and support their local tennis clubs and includes an outdoor camp component. My team and I were assigned to <strong>digitalise
-                and
-                integrate the course component of the camp into Insosy’s Springboard Platform</strong>, thus allowing part of the
-            program to be
-            coordinated centrally and administered online. Our task was the central component in the program’s
-            entire reimagining, and I thrived with this responsibility.
+    <div id="question-two" class="hide">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 10px;">
+            <img id="icon" src="./media/Untitled_Artwork.jpg" style="width: 10%; margin-left: 100px;">
+            <div class="questions" style="text-align: left;">As a Front-end Developer you will have created or
+                contributed
+                to an array of exciting projects. Tell us about the one your are most prouf of and why?</div>
         </div>
-        <img id="arrow-five" class="arrow" src="arrow_whitesmoke.jpg" onClick="arrow('arrow-five','p-six')"/>
+        <br />
+        <div style="display: flex; align-items: center; justify-content: space-around; background-color: whitesmoke;">
+            <div id="p-five" class="paragraph five">
+                The project I am most proud of is working with Tennis Australia to reimagine and redesign the delivery
+                of Tennis Victoria’s youth program, “Future Leaders”. <a
+                    href="https://www.tennis.com.au/vic/players/programs/future-leaders" target="_blank">Future
+                    Leaders</a>
+                facilitates youth to
+                volunteer and support their local tennis clubs and includes an outdoor camp component. My team and I
+                were
+                assigned to <strong>digitalise
+                    and
+                    integrate the course component of the camp into Insosy’s Springboard Platform</strong>, thus
+                allowing
+                part of the
+                program to be
+                coordinated centrally and administered online. Our task was the central component in the program’s
+                entire reimagining, and I thrived with this responsibility.
+            </div>
+            <div class="readmore">
+                <img id="arrow-five" class="arrow" src="./media/arrow_whitesmoke.jpg"
+                    onClick="arrow('arrow-five', 'read-five','p-six')" />
+                <div id="read-five" style="text-align: center;">read more...</div>
+            </div>
+        </div>
+        <div id="p-six" class="hide" style="display: flex; align-items: center; justify-content: space-around;">
+            <div class="paragraph six">The project demanded the dedication of myself and my co-worker, working long
+                hours to complete its implementation from planning to execution to analytics. As programmers, our
+                understanding of the platform and the available technologies allowed us to aid Tennis Victoria to
+                redefine their requirements and understand the potential of various programming options to illustrate
+                and animate their content. </div>
+            <div class="readmore">
+                <img id="arrow-six" class="arrow" src="./media/arrow.jpg"
+                    onClick="arrow('arrow-six', 'read-six','p-seven')" />
+                <div id="read-six" style="text-align: center;">read more...</div>
+            </div>
+        </div>
+        <div id="p-seven" class="hide"
+            style="display: flex; align-items: center; justify-content: space-around; background-color: whitesmoke;">
+            <div class="paragraph seven">When it came to designing, we were in contact with a design agency which
+                consolidated our knowledge of web page accessibility and usability, as well as industry best
+                practices.We designed the web courses following Tennis Victoria's brand guidelines, colours, fonts,
+                logos. At the end of the first camp, we prepared and shared analytics with Tennis Victoria. </div>
+            <div class="readmore">
+                <img id="arrow-seven" class="arrow" src="./media/arrow_whitesmoke.jpg"
+                    onClick="arrow('arrow-seven', 'read-seven','p-eight')" />
+                <div id="read-seven" style="text-align: center;">read more...</div>
+            </div>
+        </div>
+        <div id="p-eight" class="hide">
+            <div class="paragraph eight">For me personally, I took to heart some of the client’s feedback about how
+                digitalizing the content had allowed the program to expand their community time and changed the Future
+                Leaders Program to the core. I find much joy in web development when it facilitates ease for a group or
+                company I am passionate about. Ultimately, I was also very proud of the design and interactivity of the
+                webpages. My main takeaway from this project was to <strong>never limit the deliverables to my current
+                    skill
+                    set as a
+                    programmer.</strong> I learnt to listen to the client’s wants and needs and research which
+                technology
+                could be
+                the solution to the challenge, then upskill myself.
+            </div>
+
+        </div>
     </div>
-    <div id="p-six" class="hide" style="display: flex; align-items: center; justify-content: space-around;">
-        <div class="paragraph six">The project demanded the dedication of myself and my co-worker, working long
-            hours to complete its implementation from planning to execution to analytics. As programmers, our
-            understanding of the platform and the available technologies allowed us to aid Tennis Victoria to
-            redefine their requirements and understand the potential of various programming options to illustrate
-            and animate their content. </div>
-        <img id="arrow-six" class="arrow" src="arrow.jpg" onClick="arrow('arrow-six','p-seven')"/>
-    </div>
-    <div id="p-seven" class="hide"
-        style="display: flex; align-items: center; justify-content: space-around; background-color: whitesmoke;">
-        <div class="paragraph seven">When it came to designing, we were in contact with a design agency which
-            consolidated our knowledge of web page accessibility and usability, as well as industry best
-            practices.We designed the web courses following Tennis Victoria's brand guidelines, colours, fonts,
-            logos. At the end of the first camp, we prepared and shared analytics with Tennis Victoria. </div>
-        <img id="arrow-seven" class="arrow" src="arrow_whitesmoke.jpg" onClick="arrow('arrow-seven','p-eight')"/>
-    </div>
-    <div id="p-eight" class="hide">
-        <div class="paragraph eight">For me personally, I took to heart some of the client’s feedback about how
-            digitalizing the content had allowed the program to expand their community time and changed the Future
-            Leaders Program to the core. I find much joy in web development when it facilitates ease for a group or
-            company I am passionate about. Ultimately, I was also very proud of the design and interactivity of the
-            webpages. My main takeaway from this project was to <strong>never limit the deliverables to my current skill
-                set as a
-                programmer.</strong> I learnt to listen to the client’s wants and needs and research which technology
-            could be
-            the solution to the challenge, then upskill myself.
+    <div id="supporting-documents" class="hide">
+        <div style="display: flex; margin: 0% 20%; align-items: start">
+            <img src="./media/candle_stick.jpg" style="width: 30%;" />
+            <div style="display: flex; flex-direction: column; padding: 20px;">
+                <button class="website hidden"><a class="white" href="https://selmabenkaza.com" target="_blank">Visit my
+                        Website</a></button>
+                <button class="resume hidden"><a class="white"
+                        href="https://www.dropbox.com/s/c4j2zirrwuoga3i/Selma%20Benkaza%202023%20Resume.pdf?dl=1"
+                        target="_blank">Downlaod my Resume</a></button>
+                <button class="cover-letter hidden"><a class="white"
+                        href="https://www.dropbox.com/s/izfgou29pdtyj8s/Cover%20Letter%20Selma%20Benkaza.pdf?dl=1"
+                        target="_blank">Download my Cover Letter</a></button>
+                <div class="footer hidden">
+                    Thank you for considering me as part of your team</div>
+            </div>
         </div>
 
     </div>
-    <img src="Artwork_Two.jpg" style="width: 40%; margin-left: 30%; margin-top: 200px;" class="hidden" />
-    <div style="display: flex; justify-content:space-around; width: 60%; margin: auto; padding: 40px;">
-        <button class="website hidden"><a class="white" href="https://selmabenkaza.com" target="_blank">Visit my
-                Website</a></button>
-        <button class="resume hidden"><a class="white"
-                href="https://www.dropbox.com/s/c4j2zirrwuoga3i/Selma%20Benkaza%202023%20Resume.pdf?dl=1"
-                target="_blank">Downlaod my Resume</a></button>
-        <button class="cover-letter hidden"><a class="white"
-                href="https://www.dropbox.com/s/izfgou29pdtyj8s/Cover%20Letter%20Selma%20Benkaza.pdf?dl=1"
-                target="_blank">Download my Cover Letter</a></button>
-    </div>
+
 </body>
 
 </html>
