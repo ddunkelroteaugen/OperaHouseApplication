@@ -16,6 +16,7 @@ function arrow(arrow, readme, next) {
     document.getElementById(next).classList.remove('hide');
     document.getElementById(arrow).classList.add('hide');
     document.getElementById(readme).classList.add('hide');
+    document.getElementById(next).scrollIntoView();
 }
 
 function nav(item) {
@@ -32,12 +33,14 @@ function nav(item) {
             document.getElementById('question-one').classList.remove('hide');
             document.getElementById('question-two').classList.add('hide');
             document.getElementById('supporting-documents').classList.add('hide');
+            document.getElementById('question-one').scrollIntoView();
             break;
         case 'question-two':
             document.getElementById('profile').classList.add('hide');
             document.getElementById('question-one').classList.add('hide');
             document.getElementById('question-two').classList.remove('hide');
             document.getElementById('supporting-documents').classList.add('hide');
+            document.getElementById('question-two').scrollIntoView();
             break;
         case 'supporting-documents':
             document.getElementById('profile').classList.add('hide');

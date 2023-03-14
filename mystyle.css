@@ -60,6 +60,10 @@ hr {
     text-decoration: underline;
 }
 
+.menu-item:active {
+    font-style: bold;
+}
+
 .head {
     width: 80%;
     margin-left: 10%;
@@ -208,10 +212,11 @@ hr {
 }
 
 button {
+    width: 20%;
+    margin: 20px 40% ;
     font-size: 1.2em;
     padding: 15px;
     border-radius: 20px;
-    margin: 20px;
 }
 
 .website {
@@ -245,6 +250,7 @@ a.white:active {
     text-align: center;
     margin: 20px;
     font-size: 1.4em;
+    font-weight: 550;
 }
 
 @media (max-width: 1200px) {
