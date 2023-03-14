@@ -53,12 +53,14 @@ hr {
     padding: 10px;
 }
 
-.intro {
-    background-color: rgb(255, 128, 70);
-    color: white;
-    padding: 40px;
-    border-radius: 3px;
+.title {
+    font-size: 2em;
+    color: rgb(32, 32, 92)
+}
 
+.subtitle {
+    font-size: 1.8em;
+    color: rgb(66, 102, 217)
 }
 
 .skills {
@@ -101,6 +103,7 @@ hr {
 .skills:nth-child(8) {
     transition-delay: 900ms;
 }
+
 .skills:nth-child(9) {
     transition-delay: 1000ms;
 }
@@ -126,7 +129,7 @@ hr {
 
 
 .paragraph {
-    width: 60%;
+    width: 40%;
     padding: 30px 40px;
     font-size: 1.2em;
     margin: 20px 20%;
@@ -163,15 +166,16 @@ hr {
 
 .eight {
     border-left: 5px solid rgb(204, 227, 151);
-    width: 40%;
+
 }
 
 .hide {
     display: none !important;
 }
+
 .arrow {
-   margin-right: 10%;
-   font-size: 1.3em;
+    margin-right: 10%;
+    width: 10%;
 }
 
 button {
@@ -181,9 +185,9 @@ button {
 }
 
 .website {
-border: 2px solid rgb(184, 8, 15);
-background-color: rgb(123, 77, 106);
-transition-delay: 200ms;
+    border: 2px solid rgb(184, 8, 15);
+    background-color: rgb(123, 77, 106);
+    transition-delay: 200ms;
 }
 
 .resume {
@@ -198,8 +202,14 @@ transition-delay: 200ms;
     background-color: rgb(184, 8, 15);
     transition-delay: 600ms;
 
-}  
- 
-a.white:link, a.white:visited, a.white:hover, a.white:active {
- color: white;
+}
+
+a.white:link,
+a.white:visited,
+a.white:hover,
+a.white:active {
+    color: white;
+}
+
+@media (max-width: 1200px) {
 }
