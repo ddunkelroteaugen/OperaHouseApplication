@@ -12,16 +12,17 @@
     <img class="logo" src="./media/142e68c4-133c-4b22-bded-2750f08afcb1_rwc_15x0x947x180x4096.png" />
     <img src="./media/Artwork_Two.jpg" style="width: 40%; margin-left: 30%;" />
     <div class="menu">
-        <div class="menu-item" onClick="nav('profile')">Profile</div>
-        <div class="menu-item" onClick="nav('question-one')">Question 1</div>
-        <div class="menu-item" onClick="nav('question-two')">Question 2</div>
-        <div class="menu-item" onClick="nav('supporting-documents')">Supporting Documents</div>
+        <div id="profile-menu" class="menu-item" onClick="nav('profile')" style="color: rgb(204, 227, 151)">Profile</div>
+        <div id="question-one-menu" class="menu-item" onClick="nav('question-one')">Question 1</div>
+        <div id="question-two-menu" class="menu-item" onClick="nav('question-two')">Question 2</div>
+        <div id="supporting-documents-menu" class="menu-item" onClick="nav('supporting-documents')">Supporting Documents</div>
     </div>
     <div id="profile">
         <div style="margin: 10%;">
-            <div style="display: flex; justify-content: space-around; align-items: top;">
+            <div style="display: flex; justify-content: space-around; align-items: top; ">
 
-                <img class="hidden" src="./media/IMG_0048.jpg" style="width: 30%; transition-delay: 200ms">
+                <img class="hidden" src="./media/IMG_0048.jpg"
+                    style="width: 30%; transition-delay: 200ms; align-self: start;">
                 <div class="hidden"
                     style="writing-mode: vertical-rl; color:rgb(255, 128, 70); transition-delay: 600ms; font-size: 1.5em;">
                     Who
@@ -32,7 +33,8 @@
                         <div class="title">My name is
                             Selma,</div>
                         <div class="subtitle">an Australian and French artist
-                            and Front End Developer based in Sydney since 2015.<br />I am thrilled to apply for the
+                            and Front End Developer based in Sydney since 2015.</div>
+                        <div class="subtitle" style="font-size: 1.6em;">I am thrilled to apply for the
                             position
                             of
                             Junior
@@ -51,6 +53,7 @@
                         <div class="skills hidden">Adobe Suite</div>
                         <div class="skills hidden">Git/GitHub</div>
                     </div>
+
                     <div class="degree hidden">Bachelor of Commerce and Fine Arts from UNSW majoring in Information
                         Systems
                     </div>
@@ -71,7 +74,9 @@
             <img id="icon" src="./media/Untitled_Artwork_smokewhite.jpg" style="width: 10%; margin-right: 100px;">
         </div>
         <div style="display: flex; align-items: center; justify-content: space-around;">
-            <div id="p-one" class="paragraph one">I believe that I am an ideal candidate to contribute to Sydney
+            <div id="p-one" class="paragraph one">The Sydney Opera House website brings interesting challenges to ensure
+                that the unique features and prestige of the Opera House are reflected in the most impactful way. I
+                believe that I am an ideal candidate to contribute to Sydney
                 Opera
                 House
                 web
@@ -91,11 +96,13 @@
                 critically
                 consider the customer journey through the platform, and its ease of use. My eye for
                 colours,
-                balance, and attention to detail will allow me to ighlight and celebrate upcoming events or articles through
+                balance, and attention to detail will allow me to highlight and celebrate upcoming events or articles
+                through
                 clear
                 and
                 exciting
-                layouts.</div>
+                layouts. My objective is to use my creativity and development tools to implement the strategy and ideas
+                of the Sydney Opera House staff and its partners.</div>
             <div class="readmore">
                 <img id="arrow-two" class="arrow" src="./media/arrow_whitesmoke.jpg"
                     onClick="arrow('arrow-two', 'read-two','p-three')" />
@@ -111,7 +118,7 @@
                 and
                 the <a href="https://wierdwomen.squarespace.com/about" target="_blank">Wierd Women</a> retreat in
                 2021,
-                amongst others. I took this passion to gear up as a co-organiser of
+                amongst others. I used this passion to gear up as a co-organiser of
                 both
                 the Inner Scribes Exhibition, and the <a href="https://www.instagram.com/rootsfestival_"
                     target="_blank">Roots</a> Creative Gathering for Women in 2021 and 2023. Taking on
@@ -175,7 +182,7 @@
             </div>
         </div>
         <div id="p-six" class="hide" style="display: flex; align-items: center; justify-content: space-around;">
-            <div class="paragraph six">The project demanded the dedication of myself and my co-worker, working long
+            <div class="paragraph six">The project demanded my dedication and my coworker's, working long
                 hours to complete its implementation from planning to execution to analytics. As programmers, our
                 understanding of the platform and the available technologies allowed us to aid Tennis Victoria to
                 redefine their requirements and understand the potential of various programming options to illustrate
@@ -199,7 +206,8 @@
             </div>
         </div>
         <div id="p-eight" class="hide">
-            <div class="paragraph eight">For me personally, I took to heart some of the client’s feedback about how
+            <div class="paragraph eight">From a personal perspective, I took to heart some of the client’s feedback
+                about how
                 digitalizing the content had allowed the program to expand their community time and changed the Future
                 Leaders Program to the core. I find much joy in web development when it facilitates ease for a group or
                 company I am passionate about. Ultimately, I was also very proud of the design and interactivity of the
@@ -226,6 +234,7 @@
                     target="_blank">Download my Cover Letter</a></button>
             <div class="footer hidden">
                 Thank you for considering me as part of your team.</div>
+                <img src="./media/spiral.jpg" style="width: 20%; margin-left: 40%"/>
         </div>
 
     </div>
